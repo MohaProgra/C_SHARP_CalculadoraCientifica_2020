@@ -32,7 +32,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Pantalla = new System.Windows.Forms.TextBox();
             this.Retroceder = new System.Windows.Forms.Button();
             this.num7 = new System.Windows.Forms.Button();
             this.num4 = new System.Windows.Forms.Button();
@@ -58,6 +57,7 @@
             this.imagenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.vISTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Pantalla = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -95,30 +95,15 @@
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // Pantalla
-            // 
-            this.Pantalla.BackColor = System.Drawing.Color.White;
-            this.Pantalla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pantalla.Enabled = false;
-            this.Pantalla.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pantalla.ForeColor = System.Drawing.Color.Red;
-            this.Pantalla.Location = new System.Drawing.Point(12, 37);
-            this.Pantalla.Multiline = true;
-            this.Pantalla.Name = "Pantalla";
-            this.Pantalla.ReadOnly = true;
-            this.Pantalla.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Pantalla.Size = new System.Drawing.Size(271, 50);
-            this.Pantalla.TabIndex = 1;
-            this.Pantalla.Text = "0";
-            // 
             // Retroceder
             // 
             this.Retroceder.BackColor = System.Drawing.Color.IndianRed;
-            this.Retroceder.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
+            this.Retroceder.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.Retroceder.FlatAppearance.BorderSize = 3;
             this.Retroceder.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Retroceder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Retroceder.Font = new System.Drawing.Font("Cooper Black", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Retroceder.ForeColor = System.Drawing.Color.Black;
             this.Retroceder.Location = new System.Drawing.Point(12, 93);
             this.Retroceder.Name = "Retroceder";
             this.Retroceder.Size = new System.Drawing.Size(106, 50);
@@ -231,6 +216,7 @@
             this.Borrar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Borrar.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Borrar.ForeColor = System.Drawing.Color.Black;
             this.Borrar.Location = new System.Drawing.Point(124, 93);
             this.Borrar.Name = "Borrar";
             this.Borrar.Size = new System.Drawing.Size(50, 50);
@@ -295,6 +281,7 @@
             this.Suma.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Suma.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Suma.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Suma.ForeColor = System.Drawing.Color.Black;
             this.Suma.Location = new System.Drawing.Point(180, 205);
             this.Suma.Name = "Suma";
             this.Suma.Size = new System.Drawing.Size(50, 50);
@@ -311,6 +298,7 @@
             this.Resta.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Resta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Resta.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resta.ForeColor = System.Drawing.Color.Black;
             this.Resta.Location = new System.Drawing.Point(233, 205);
             this.Resta.Name = "Resta";
             this.Resta.Size = new System.Drawing.Size(50, 50);
@@ -327,6 +315,7 @@
             this.Division.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Division.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Division.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Division.ForeColor = System.Drawing.Color.Black;
             this.Division.Location = new System.Drawing.Point(180, 149);
             this.Division.Name = "Division";
             this.Division.Size = new System.Drawing.Size(50, 50);
@@ -343,6 +332,7 @@
             this.Multiplicación.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Multiplicación.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Multiplicación.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Multiplicación.ForeColor = System.Drawing.Color.Black;
             this.Multiplicación.Location = new System.Drawing.Point(180, 93);
             this.Multiplicación.Name = "Multiplicación";
             this.Multiplicación.Size = new System.Drawing.Size(50, 50);
@@ -390,6 +380,7 @@
             this.Igual.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Igual.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Igual.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Igual.ForeColor = System.Drawing.Color.Black;
             this.Igual.Location = new System.Drawing.Point(180, 261);
             this.Igual.Name = "Igual";
             this.Igual.Size = new System.Drawing.Size(103, 106);
@@ -406,6 +397,7 @@
             this.Raiz.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Raiz.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Raiz.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Raiz.ForeColor = System.Drawing.Color.Black;
             this.Raiz.Location = new System.Drawing.Point(233, 149);
             this.Raiz.Name = "Raiz";
             this.Raiz.Size = new System.Drawing.Size(50, 50);
@@ -422,6 +414,7 @@
             this.Cuadrado.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
             this.Cuadrado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Cuadrado.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cuadrado.ForeColor = System.Drawing.Color.Black;
             this.Cuadrado.Location = new System.Drawing.Point(233, 93);
             this.Cuadrado.Name = "Cuadrado";
             this.Cuadrado.Size = new System.Drawing.Size(50, 50);
@@ -472,6 +465,22 @@
             this.vISTAToolStripMenuItem.Size = new System.Drawing.Size(52, 21);
             this.vISTAToolStripMenuItem.Text = "VISTA";
             // 
+            // Pantalla
+            // 
+            this.Pantalla.BackColor = System.Drawing.Color.White;
+            this.Pantalla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pantalla.Enabled = false;
+            this.Pantalla.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pantalla.ForeColor = System.Drawing.Color.Red;
+            this.Pantalla.Location = new System.Drawing.Point(12, 37);
+            this.Pantalla.Multiline = true;
+            this.Pantalla.Name = "Pantalla";
+            this.Pantalla.ReadOnly = true;
+            this.Pantalla.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Pantalla.Size = new System.Drawing.Size(271, 50);
+            this.Pantalla.TabIndex = 1;
+            this.Pantalla.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,6 +511,7 @@
             this.Controls.Add(this.Retroceder);
             this.Controls.Add(this.Pantalla);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Red;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.MainMenuStrip = this.menuStrip1;
@@ -521,7 +531,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.TextBox Pantalla;
         private System.Windows.Forms.Button Retroceder;
         private System.Windows.Forms.Button num7;
         private System.Windows.Forms.Button num4;
@@ -547,6 +556,7 @@
         private System.Windows.Forms.ToolStripMenuItem aYUDAToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem vISTAToolStripMenuItem;
+        private System.Windows.Forms.TextBox Pantalla;
     }
 }
 
